@@ -1,0 +1,19 @@
+.swipe-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 48px 40px;
+  width: 340px;
+  text-align: center;
+  font-family: 'Georgia', serif;
+}
+
+.swipe-card__text {
+  font-size: 22px;
+  font-family: Arial;
+  font-weight: 600;
+  color: #1a1a2e;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: -0.3px;
+}
