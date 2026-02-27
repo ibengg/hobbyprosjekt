@@ -1,10 +1,14 @@
 import React from "react";
-import "./swipeCard.css";
+import "./SwipeCard.css";
 
-const SwipeCard: React.FC = () => {
+interface SwipeCardProps {
+  question: string;
+}
+
+const SwipeCard: React.FC<SwipeCardProps> = ({ question }) => {
   return (
     <div className="swipe-card">
-      <p className="swipe-card__text">Test question</p>
+      <p className="swipe-card__text">{question}</p>
     </div>
   );
 };
