@@ -1,5 +1,5 @@
 import React from "react";
-import "./SwipeCard.css";
+import "./swipeCard.css";
 
 const SwipeCard: React.FC = () => {
   return (
