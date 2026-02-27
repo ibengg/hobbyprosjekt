@@ -11,6 +11,7 @@ const QUESTIONS = [
   "Hvem er mest sannsynlig å ha snus på bryllupsdagen sin?",
   "Hvem bytter smak oftest?",
   "Hvem er mest defensiv når noen kritiserer snusvanene deres?",
+  "Hvem har den mest kreative unnskyldningen for å snuse på jobb?",
 ];
 
 const SwipeGame: React.FC = () => {

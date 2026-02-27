@@ -7,6 +7,7 @@
   padding: var(--space-8) var(--space-4);
   background-color: var(--color-background);
   gap: var(--space-8);
+  margin: 0 auto;
 }
 
 .swipe-game__header {
