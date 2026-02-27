@@ -12,6 +12,8 @@
   max-width: 900px;
   text-align: center;
   font-family: var(--font-display);
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .swipe-card__text {
