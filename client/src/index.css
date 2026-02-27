@@ -1,9 +1,37 @@
-/* Global variables */
+/* Global Styling */
+
 :root {
-  /* Fonts */
+  /* ── Fonts ─────────────────────────────── */
   --font-family: Arial, sans-serif;
 
-  /* Color Scheme (White / Grey / Pink) */
+  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-md: 1rem; /* 16px */
+  --font-size-lg: 1.125rem; /* 18px */
+  --font-size-xl: 1.25rem; /* 20px */
+  --font-size-2xl: 1.5rem; /* 24px */
+  --font-size-3xl: 1.875rem; /* 30px */
+  --font-size-4xl: 2.25rem; /* 36px */
+  --font-size-5xl: 3rem; /* 48px */
+  --font-size-6xl: 3.75rem; /* 60px */
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height: 1.6;
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-loose: 1.75;
+
+  --letter-spacing-tight: -0.3px;
+  --letter-spacing-normal: 0px;
+  --letter-spacing-wide: 0.5px;
+  --letter-spacing-wider: 1px;
+
+  /* ── Color Scheme (White / Grey / Pink) ─ */
+
   --color-background: #f5f5f7;
   --color-surface: #ffffff;
   --color-surface-hover: #f0f0f3;
@@ -17,27 +45,55 @@
   --color-text: #1f2933;
   --color-text-secondary: #6b7280;
   --color-text-muted: #9ca3af;
+  --color-text-inverse: #ffffff;
 
   /* Borders */
   --color-border: #e5e7eb;
 
-  /* Radius */
+  /* Semantic */
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
+
+  /* ── Border Radius ──────────────────────── */
+  --radius-xs: 4px;
   --radius-sm: 6px;
   --radius-md: 12px;
   --radius-lg: 20px;
+  --radius-xl: 32px;
+  --radius-full: 9999px;
 
-  /* Shadows */
+  /* ── Shadows ────────────────────────────── */
   --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.06);
   --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.15);
 
-  /* Spacing scale */
-  --space-sm: 0.5rem;
-  --space-md: 1rem;
-  --space-lg: 2rem;
+  /* ── Spacing ────────────────────────────── */
+  --space-1: 0.25rem; /* 4px  */
+  --space-2: 0.5rem; /* 8px  */
+  --space-sm: 0.5rem; /* 8px  */
+  --space-3: 0.75rem; /* 12px */
+  --space-4: 1rem; /* 16px */
+  --space-md: 1rem; /* 16px */
+  --space-5: 1.25rem; /* 20px */
+  --space-6: 1.5rem; /* 24px */
+  --space-8: 2rem; /* 32px */
+  --space-lg: 2rem; /* 32px */
+  --space-10: 2.5rem; /* 40px */
+  --space-12: 3rem; /* 48px */
+  --space-16: 4rem; /* 64px */
 
-  /* Typography */
-  --line-height: 1.6;
+  /* ── Transitions ────────────────────────── */
+  --transition-fast: 150ms ease;
+  --transition-normal: 0.2s ease;
+  --transition-slow: 400ms ease;
 }
+
+/* ============================================
+   RESET
+   ============================================ */
 
 *,
 *::before,
@@ -52,9 +108,15 @@ body {
   height: 100%;
 }
 
+/* ============================================
+   BASE STYLES
+   ============================================ */
+
 body {
   min-height: 100vh;
   font-family: var(--font-family);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-regular);
   line-height: var(--line-height);
   background-color: var(--color-background);
   color: var(--color-text);
@@ -63,42 +125,105 @@ body {
   padding: var(--space-md);
 }
 
-/* Typography */
-h1,
-h2,
-h3 {
+/* ── Typography ─────────────────────────── */
+
+h1 {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-tight);
   color: var(--color-text);
   margin-bottom: var(--space-md);
 }
 
-p {
-  color: var(--color-text-secondary);
+h2 {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-tight);
+  color: var(--color-text);
   margin-bottom: var(--space-md);
 }
 
-/* Links */
+h3 {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-normal);
+  color: var(--color-text);
+  margin-bottom: var(--space-md);
+}
+
+h4 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-normal);
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+}
+
+h5 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-normal);
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+}
+
+h6 {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-normal);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-sm);
+}
+
+p {
+  font-size: var(--font-size-md);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height);
+  margin-bottom: var(--space-md);
+}
+
+small {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+/* ── Links ──────────────────────────────── */
+
 a {
   color: var(--color-primary);
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: color var(--transition-normal);
 }
 
 a:hover {
   color: var(--color-primary-hover);
 }
 
-/* Buttons (global baseline) */
+/* ── Buttons (global baseline) ──────────── */
+
 button {
   font-family: inherit;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
   border-radius: var(--radius-md);
   border: 1px solid var(--color-border);
   background-color: var(--color-surface);
   color: var(--color-text);
   padding: 0.6rem 1.2rem;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all var(--transition-normal);
 }
 
 button:hover {
   background-color: var(--color-surface-hover);
+}
+
+/* ── Images & Media ─────────────────────── */
+
+img,
+video {
+  max-width: 100%;
+  display: block;
 }
