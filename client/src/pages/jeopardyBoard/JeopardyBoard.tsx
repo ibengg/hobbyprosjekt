@@ -55,7 +55,6 @@ const JeopardyBoard: React.FC = () => {
           ))}
         </div>
 
-        {/* Question rows */}
         {data.categories[0].questions.map((_, rowIndex) => (
           <div key={rowIndex} className="jeopardy-board__row">
             {data.categories.map((cat) => {
@@ -82,15 +81,9 @@ const JeopardyBoard: React.FC = () => {
         ))}
       </div>
 
-      {/* Score / progress */}
-      <p className="jeopardy-board__progress">
-        {usedTiles.size} / {data.categories.length * data.categories[0].questions.length} answered
-      </p>
-
-      {/* Win state */}
       {allUsed && (
         <div className="jeopardy-complete">
-          🏆 All questions answered!
+          All questions answered!
           <button
             className="jeopardy-complete__reset"
             onClick={() => setUsedTiles(new Set())}
@@ -100,7 +93,6 @@ const JeopardyBoard: React.FC = () => {
         </div>
       )}
 
-      {/* Modal overlay */}
       {activeTile && (
         <div className="jeopardy-modal__backdrop" onClick={handleClose}>
           <div
@@ -129,10 +121,6 @@ const JeopardyBoard: React.FC = () => {
                 Reveal Answer
               </button>
             )}
-
-            <button className="jeopardy-modal__close" onClick={handleClose}>
-              {showAnswer ? "Mark as Done" : "Skip"}
-            </button>
           </div>
         </div>
       )}
