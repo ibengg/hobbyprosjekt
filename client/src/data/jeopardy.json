@@ -1,0 +1,190 @@
+{
+  "categories": [
+    {
+      "id": "science",
+      "title": "Science",
+      "questions": [
+        {
+          "value": 200,
+          "question": "What is the mitochondria?",
+          "answer": "This is the powerhouse of the cell."
+        },
+        {
+          "value": 400,
+          "question": "What is Au?",
+          "answer":"The chemical symbol for gold."
+        },
+        {
+          "value": 600,
+          "question": "Who is Albert Einstein?",
+          "answer": "This physicist developed the theory of general relativity."   
+        },
+        {
+          "value": 800,
+          "question": "What is 206?",
+          "answer": "The number of bones in the adult human body."
+        },
+        {
+          "value": 1000,
+          "question": "What is Newton's Third Law of Motion?",
+          "answer": "For every action, there is an equal and opposite reaction."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "title": "History",
+      "questions": [
+        {
+          "value": 200,
+          "question": "What is 1989?",
+          "answer": "The year the Berlin Wall fell."
+        },
+        {
+          "value": 400,
+          "question": "What is the Colossus of Rhodes?",
+          "answer": "This ancient wonder stood at the entrance of the harbour of the island of Rhodes."
+        },
+        {
+          "value": 600,
+          "question": "What is New Zealand?",
+          "answer": "The first country to grant women the right to vote nationally."
+        },
+        {
+          "value": 800,
+          "question": "Who is Nero?",
+          "answer": "This Roman emperor famously fiddled while Rome burned in 64 AD."
+        },
+        {
+          "value": 1000,
+          "question": "What is the Mayflower?",
+          "answer": "The name of the ship that carried the Pilgrims to Plymouth Rock in 1620."
+        }
+      ]
+    },
+    {
+      "id": "geography",
+      "title": "Geography",
+      "questions": [
+        {
+          "value": 200,
+          "question": "What is Canberra?",
+          "answer": "The capital city of Australia."
+        },
+        {
+          "value": 400,
+          "question": "What is the Nile?",
+          "answer": "The longest river in the world."
+        },
+        {
+          "value": 600,
+          "question": "What is Canada?",
+          "answer": "The country with the most natural lakes in the world."
+        },
+        {
+          "value": 800,
+          "question": "What is the Strait of Gibraltar?",
+          "answer": "The narrow strait that separates Europe from Africa."
+        },
+        {
+          "value": 1000,
+          "question": "What is San Marino?",
+          "answer": "The tiny landlocked country completely surrounded by Italy."
+        }
+      ]
+    },
+    {
+      "id": "popculture",
+      "title": "Pop Culture",
+      "questions": [
+        {
+          "value": 200,
+          "question": "What is Wakanda?",
+          "answer": "The fictional African nation in Marvel's Black Panther."
+        },
+        {
+          "value": 400,
+          "question": "Who is Beyoncé?",
+          "answer": "The pop star who holds the record for most Grammy wins ever."
+        },
+        {
+          "value": 600,
+          "question": "What is Central Perk?",
+          "answer": "The name of the coffee shop in the TV show Friends."
+        },
+        {
+          "value": 800,
+          "question": "Who is Quentin Tarantino?",
+          "answer": "The director who made Pulp Fiction, Reservoir Dogs, and Inglourious Basterds."
+        },
+        {
+          "value": 1000,
+          "question": "What is Pokémon?",
+          "answer": "The name of the fictional creatures that are the main focus of the Pokémon franchise."
+        }
+      ]
+    },
+    {
+      "id": "sports",
+      "title": "Sports",
+      "questions": [
+        {
+          "value": 200,
+          "question": "What is 5?",
+          "answer": "The number of players on a basketball team on the court at one time."
+        },
+        {
+          "value": 400,
+          "question": "What is Brazil?",
+          "answer": "The country that has won the most FIFA World Cup titles." 
+        },
+        {
+          "value": 600,
+          "question": "What is Faster, Higher, Stronger?",
+          "answer": "The motto of the Olympic Games."
+        },
+        {
+          "value": 800,
+          "question": "Who is Novak Djokovic?",
+          "answer": "The tennis player who holds the record for most Grand Slam singles titles."
+        },
+        {
+          "value": 1000,
+          "question": "What is a hat trick?",
+          "answer": "The term for scoring three goals in a single hockey or soccer game."
+        }
+      ]
+    },
+    {
+      "id": "wordplay",
+      "title": "Word Play",
+      "questions": [
+        {
+          "value": 200,
+          "question": "What is a palindrome?",
+          "answer": "A word that reads the same forwards and backwards."
+        },
+        {
+          "value": 400,
+          "question": "What is 'honorificabilitudinitatibus'?",
+          "answer": "The longest word in the English language that alternates vowels and consonants."
+        },
+        {
+          "value": 600,
+          "question": "What is a simile?",
+          "answer": "A figure of speech that compares two things using 'like' or 'as'."
+        },
+        {
+          "value": 800,
+          "question": "What is an antonym?",
+          "answer": "A word that means the opposite of another word."
+        },
+        {
+          "value": 1000,
+          "question": "What is onomatopoeia?",
+          "answer": "The word for a word that sounds like the noise it describes, such as 'buzz' or 'crash'."
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import SwipeCard from "../components/swipeCard/SwipeCard";
+import SwipeCard from "../../components/swipeCard/SwipeCard";
 import "./swipeGame.css";
 
 const QUESTIONS = [
@@ -24,7 +24,9 @@ const SwipeGame: React.FC = () => {
     <main className="swipe-game">
       <header className="swipe-game__header">
         <h1 className="swipe-game__title">Snusboksleken</h1>
-        <p className="swipe-game__subtitle">Read the card and make your choice</p>
+        <p className="swipe-game__subtitle">
+          Read the card and make your choice
+        </p>
       </header>
 
       <section className="swipe-game__card-area">
