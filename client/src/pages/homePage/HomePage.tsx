@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./HomePage.css";
 import { Button } from "../../components/button/Button";
+import Modal from "../../components/modal/Modal";
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
@@ -20,6 +21,10 @@ const Home: React.FC = () => {
         <Button onClick={() => navigate("/jeopardy")} variant="primary" size="large">
           Jeopardy
         </Button>
+        <Modal isOpen={true} onClose={() => {}}>
+          <h2>Coming Soon</h2>
+          <p>This feature is under development. Stay tuned!</p>
+        </Modal>
       </div>
     </main>
   );
