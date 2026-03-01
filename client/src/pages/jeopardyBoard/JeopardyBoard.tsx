@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import data from "../../data/jeopardy.json";
 import Button from "../../components/button/Button";
+import Modal from "../../components/modal/Modal";
 import "./JeopardyBoard.css";
 
 interface Question {
@@ -101,15 +102,14 @@ const JeopardyBoard: React.FC = () => {
         </div>
       )}
 
-      {/* Modal */}
-      {activeTile && (
-        <div className="jeopardy-modal__backdrop" onClick={handleClose}>
-          <div
-            className="jeopardy-modal"
-            onClick={(e) => e.stopPropagation()}
-            role="dialog"
-            aria-modal="true"
-          >
+      {/* Question modal */}
+      <Modal
+        isOpen={!!activeTile}
+        onClose={handleClose}
+        className="jeopardy-modal"
+      >
+        {activeTile && (
+          <>
             <div className="jeopardy-modal__value">
               ${activeTile.question.value}
             </div>
@@ -137,9 +137,9 @@ const JeopardyBoard: React.FC = () => {
                 </Button>
               </>
             )}
-          </div>
-        </div>
-      )}
+          </>
+        )}
+      </Modal>
     </div>
   );
 };
