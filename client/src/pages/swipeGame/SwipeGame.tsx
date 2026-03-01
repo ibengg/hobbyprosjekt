@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import SwipeCard from "../../components/swipeCard/SwipeCard";
+import Button from "../../components/button/Button";
 import "./swipeGame.css";
 
 const QUESTIONS = [
@@ -30,25 +31,29 @@ const SwipeGame: React.FC = () => {
       </header>
 
       <section className="swipe-game__card-area">
-        <button
+        <Button
+          variant="secondary"
+          size="medium"
           className="swipe-game__arrow swipe-game__arrow--left"
           onClick={() => setIndex((i) => i - 1)}
           disabled={isFirst}
-          aria-label="Previous question"
+          label="Previous question"
         >
           &#8592;
-        </button>
+        </Button>
 
         <SwipeCard question={QUESTIONS[index]} />
 
-        <button
+        <Button
+          variant="secondary"
+          size="medium"
           className="swipe-game__arrow swipe-game__arrow--right"
           onClick={() => setIndex((i) => i + 1)}
           disabled={isLast}
-          aria-label="Next question"
+          label="Next question"
         >
           &#8594;
-        </button>
+        </Button>
       </section>
 
       <p className="swipe-game__counter">

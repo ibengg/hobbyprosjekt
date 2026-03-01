@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import data from "../../data/jeopardy.json";
+import Button from "../../components/button/Button";
 import "./JeopardyBoard.css";
 
 interface Question {
@@ -42,10 +43,13 @@ const JeopardyBoard: React.FC = () => {
     setShowAnswer(false);
   };
 
-  const allUsed = usedTiles.size === data.categories.length * data.categories[0].questions.length;
+  const allUsed =
+    usedTiles.size ===
+    data.categories.length * data.categories[0].questions.length;
 
   return (
     <div className="jeopardy-page">
+      {/* Board */}
       <div className="jeopardy-board">
         <div className="jeopardy-board__headers">
           {data.categories.map((cat) => (
@@ -81,18 +85,23 @@ const JeopardyBoard: React.FC = () => {
         ))}
       </div>
 
+      {/* Completion banner */}
       {allUsed && (
         <div className="jeopardy-complete">
           All questions answered!
-          <button
+          <Button
+            variant="secondary"
+            size="small"
             className="jeopardy-complete__reset"
             onClick={() => setUsedTiles(new Set())}
+            label="Play again"
           >
             Play Again
-          </button>
+          </Button>
         </div>
       )}
 
+      {/* Modal */}
       {activeTile && (
         <div className="jeopardy-modal__backdrop" onClick={handleClose}>
           <div
@@ -110,16 +119,23 @@ const JeopardyBoard: React.FC = () => {
             </p>
 
             {showAnswer ? (
-              <div className="jeopardy-modal__answer">
-                {activeTile.question.answer}
-              </div>
+              <>
+                <div className="jeopardy-modal__answer">
+                  {activeTile.question.answer}
+                </div>
+              </>
             ) : (
-              <button
-                className="jeopardy-modal__reveal"
-                onClick={() => setShowAnswer(true)}
-              >
-                Reveal Answer
-              </button>
+              <>
+                <Button
+                  variant="primary"
+                  size="medium"
+                  className="jeopardy-modal__reveal"
+                  onClick={() => setShowAnswer(true)}
+                  label="Reveal answer"
+                >
+                  Reveal Answer
+                </Button>
+              </>
             )}
           </div>
         </div>
