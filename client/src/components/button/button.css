@@ -1,9 +1,3 @@
-/* ============================================
-   Button Component — Base Styles
-   Overrides via className will win naturally
-   since they're written after these rules.
-   ============================================ */
-
 .basic-button {
   display: inline-flex;
   align-items: center;
