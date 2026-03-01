@@ -95,7 +95,7 @@ const JeopardyBoard: React.FC = () => {
                     <span className="jeopardy-tile__check">✓</span>
                   ) : (
                     <span className="jeopardy-tile__value">
-                      ${question.value}
+                      {question.value}
                     </span>
                   )}
                 </button>
